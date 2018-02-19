@@ -1,0 +1,7 @@
+A request was sent to reset your password for the PassHub application. If this action was not initiated by you please disregard this email.
+
+To reset your password follow this link:
+{{ @password_reset_link }}
+
+-- 
+Sent by PassHub

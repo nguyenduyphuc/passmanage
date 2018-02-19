@@ -1,0 +1,32 @@
+[globals]
+
+DEBUG=0
+CACHE=true
+ENCODING=utf-8
+TZ=UTC
+
+ENABLEINSTALLER=false
+
+UI=app/views/
+CSS=assets/css/
+JS=assets/js/
+LOGS=app/logs/
+AUTOLOAD=app/inc/|app/models/
+
+DBHOST="{{ @SESSION.db_host | raw }}"
+DBNAME="{{ @SESSION.db_name | raw }}"
+DBUSER="{{ @SESSION.db_username | raw }}"
+DBPASS="{{ @SESSION.db_password | raw }}"
+DBPORT={{ @SESSION.db_port | raw }}
+
+NAME=PassHub
+EMAIL="{{ @SESSION.email_username | raw }}"
+EMAIL_PW="{{ @SESSION.email_password | raw }}"
+SMTP_SERVER="{{ @SESSION.smtp_server | raw }}"
+SMTP_PORT={{ @SESSION.smtp_port | raw }}
+SMTP_SCHEME={{ @SESSION.smtp_scheme | raw }}
+
+CRYPTKEY="{{ @cryptkey | raw }}"
+
+[configs]
+app/config/routes.ini=true
